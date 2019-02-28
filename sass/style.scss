@@ -4,13 +4,13 @@
 @import "layout";
 
 
-
+//fonts
 h2 {
 	color: $header-color;
 	font-family: $main-font;
 	font-size: $main-font-size;
 	font-weight: 500;
-	
+	line-height: 42px;
 	text-transform: uppercase;
 }
 
@@ -19,7 +19,7 @@ h3 {
 	font-family: $main-font;
 	font-size: $main-font-size;
 	font-weight: 700;
-	
+	line-height: 42px;
 	text-transform: uppercase;
 	
 }
@@ -29,6 +29,28 @@ h4 {
 	font-family: $main-font;
 	font-size: $main-font-size;
 	font-weight: 700;
-	
+	line-height: 42px;
 }
+
+p {
+	$main-font-size: 16px;
+	font-family: $main-font;
+	$pharagraph-color: #333333;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+.sidebar a {
+	color: $sidebar-pharagraph;
+	font-size: $second-font-size;
+	font-family: $main-font;
+	font-weight: 300;
+}
+//grid
 
