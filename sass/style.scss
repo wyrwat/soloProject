@@ -54,6 +54,14 @@ li {
 		font-size: $second-font-size;
 		font-family: $main-font;
 		font-weight: 300;
+		
+		svg {
+			width: 16px;
+			height: 15px;
+			//color: white;
+			fill: white;
+		}
+		
 	}
 }
 
