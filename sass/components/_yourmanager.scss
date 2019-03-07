@@ -8,7 +8,7 @@
     
     .manager-photo-container {
         position: relative;
-        
+    
         .manager-photo {
            
             
@@ -32,11 +32,9 @@
             left: 50px;
             bottom: 43px;
         }
-        
     }
-    
 }
-
+//elementy reuzywalne 
 .photo {
     border-radius: 50%;
     background-color: $sidebar-background;
@@ -49,4 +47,8 @@
     font-size: $second-font-size;
     font-weight: 300;
     line-height: 42px;
+}
+
+.link:hover {
+    color: #ffa220;
 }
