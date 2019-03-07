@@ -1,6 +1,10 @@
-svg {
+a {
+    color: $sidebar-link-2;
+    display: block;
+    svg {
     width: 16px;
     height: 15px;
     fill: $icon-color;
 }
 
+}
