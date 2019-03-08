@@ -1,6 +1,42 @@
-svg {
-    width: 16px;
-    height: 15px;
-    fill: $icon-color;
-}
+.menu {
 
+    .menu-item {
+        .orange-rectangle {
+            position: absolute;
+            width: 4px;
+            height: 40px;
+            background-color: #f58220;
+            display: none;
+        }
+        .sidebar-link { 
+            line-height: 42px;
+            color: $sidebar-link-2;
+            display: block;
+            height: 40px;;
+            svg {
+                //display: block;
+                line-height: 42px;
+                width: 16px;
+                height: 15px;
+                fill: $icon-color;
+                margin: {
+                    left: 19px;
+                    right: 12px;
+                } 
+            }
+        }
+    }
+    .sidebar-link:hover {
+        background-color: $sidebar-hover;
+    }
+    .menu-item:hover .orange-rectangle {
+        display: block;
+        background-color: #f58220;
+    }
+    .vertical-line-sidebar {
+        
+        width: 188px;
+        height: 1px;
+        background-color: $pharagraph-color;
+    }
+}
