@@ -2,10 +2,18 @@
     position: absolute;
     top: 25px;
     right: 0;
-    margin-right: 18px;;
+    margin-right: 18px;
 
     .fa-bars {
+       
         color: $icon-color;
         cursor: pointer;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .nav-icon {
+        left: 0;
+        margin-left: 21px;
     }
 }

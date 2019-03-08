@@ -1,43 +1,71 @@
 .menu {
+  .menu-item {
+    .orange-rectangle {
+      position: absolute;
+      width: 4px;
+      height: 40px;
+      background-color: #f58220;
+      display: none;
+    }
+    svg {
+      line-height: 42px;
+      width: 18px;
+      height: 15px;
+      fill: $icon-color;
+      margin: {
+        left: 19px;
+        right: 10px;
+      }
+    }
+    .sidebar-link {
+      line-height: 42px;
+      color: $sidebar-link-2;
+      display: inline-block;
+      height: 40px;
+    }
+  }
+  .menu-item:first-of-type {
+    margin-top: -8px;
+  }
+}
+.vertical-line-sidebar {
+  margin-top: 41px;
+  width: 188px;
+  height: 1px;
+  background-color: $pharagraph-color;
+}
 
+@media (hover: hover) {
+  .menu-item:hover {
+    background-color: $sidebar-hover;
+  }
+  .menu-item:hover .orange-rectangle {
+    display: block;
+    background-color: #f58220;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu {
     .menu-item {
-        .orange-rectangle {
-            position: absolute;
-            width: 4px;
-            height: 40px;
-            background-color: #f58220;
-            display: none;
-        }
-        svg {
-            //display: block;
-            line-height: 42px;
-            width: 16px;
-            height: 15px;
-            fill: $icon-color;
-            margin: {
-                left: 19px;
-                right: 12px;
-            } 
-        }
-        .sidebar-link { 
-            line-height: 42px;
-            color: $sidebar-link-2;
-            display: inline-block;
-            height: 40px;
-            
-        }
+      height: 40px;
+
+      .sidebar-link {
+        display: none;
+      }
+
+      svg {
+        width: 18px;
+        height: 15px;
+      }
     }
-    .menu-item:hover {
-        background-color: $sidebar-hover;
+
+    .menu-item:first-of-type {
+      margin-top: 73px;
     }
-    .menu-item:hover .orange-rectangle {
-        display: block;
-        background-color: #f58220;
-    }
-    .vertical-line-sidebar {
-        
-        width: 188px;
-        height: 1px;
-        background-color: $pharagraph-color;
-    }
+  }
+
+  .vertical-line-sidebar {
+    margin-top: 29px;
+  }
 }

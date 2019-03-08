@@ -1,54 +1,84 @@
 .yourManager {
-    h3 {
-        margin: {
-            top: 20px;
-            left: 20px;
-        } 
+  h3 {
+    margin: {
+      top: 20px;
+      left: 20px;
     }
-    
-    .manager-photo-container {
-        position: relative;
-    
-        .manager-photo {
-           
-            
-            margin: {
-                top:-10px;
-                left: 20px;
-                right: 10px;
-            } 
-        }
+  }
 
-        .manager-link {
-            //display: block;
-            position: relative;
-            bottom: 15px;
-            margin-top: -120px;
-        }
+  .manager-photo-container {
+    position: relative;
 
-
-        .online-photo-container {
-            position: absolute;
-            left: 50px;
-            bottom: 43px;
-        }
+    .manager-photo {
+      margin: {
+        top: -10px;
+        left: 20px;
+        right: 10px;
+      }
     }
+
+    .manager-link {
+      position: relative;
+      bottom: 15px;
+      margin-top: -120px;
+    }
+
+    .online-photo-container {
+      position: absolute;
+      left: 50px;
+      bottom: 43px;
+    }
+  }
 }
-//elementy reuzywalne 
+//elementy reuzywalne
 .photo {
-    border-radius: 50%;
-    background-color: $sidebar-background;
-    line-height: 42px;
+  border-radius: 50%;
+  background-color: $sidebar-background;
+  line-height: 42px;
 }
 
 .small-link {
-    color: $links;
-    font-family: Roboto;
-    font-size: $second-font-size;
-    font-weight: 300;
-    line-height: 42px;
+  color: $links;
+  font-family: Roboto;
+  font-size: $second-font-size;
+  font-weight: 300;
+  line-height: 42px;
 }
 
 .link:hover {
-    color: #ffa220;
+  color: #ffa220;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .yourManager {
+    h3 {
+      display: none;
+    }
+
+    .manager-photo-container {
+        
+        .manager-photo {
+            margin: {
+                top:25px;
+                left: 13px;
+            } 
+            width: 26px;
+            height: 26px;
+        }
+
+        .manager-link {
+            display: none;
+        }
+
+        .online-photo-container {
+            left: 30px;
+            bottom: 20px;
+
+            .online-photo {
+                width: 10px;
+                height: 9px;
+            }
+        }
+    }
+  }
 }

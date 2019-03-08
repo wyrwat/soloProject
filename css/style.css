@@ -438,11 +438,11 @@ li {
 
 .menu .menu-item svg {
   line-height: 42px;
-  width: 16px;
+  width: 18px;
   height: 15px;
   fill: #818181;
   margin-left: 19px;
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 .menu .menu-item .sidebar-link {
@@ -452,24 +452,55 @@ li {
   height: 40px;
 }
 
-.menu .menu-item:hover {
-  background-color: #282828;
+.menu .menu-item:first-of-type {
+  margin-top: -8px;
 }
 
-.menu .menu-item:hover .orange-rectangle {
-  display: block;
-  background-color: #f58220;
-}
-
-.menu .vertical-line-sidebar {
+.vertical-line-sidebar {
+  margin-top: 41px;
   width: 188px;
   height: 1px;
   background-color: #333333;
 }
 
+@media (hover: hover) {
+  .menu-item:hover {
+    background-color: #282828;
+  }
+  .menu-item:hover .orange-rectangle {
+    display: block;
+    background-color: #f58220;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu .menu-item {
+    height: 40px;
+  }
+  .menu .menu-item .sidebar-link {
+    display: none;
+  }
+  .menu .menu-item svg {
+    width: 18px;
+    height: 15px;
+  }
+  .menu .menu-item:first-of-type {
+    margin-top: 73px;
+  }
+  .vertical-line-sidebar {
+    margin-top: 29px;
+  }
+}
+
 .logo {
   background-color: #191919;
   margin-left: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    display: none;
+  }
 }
 
 .sidebar {
@@ -493,6 +524,13 @@ li {
 .nav-icon .fa-bars {
   color: #818181;
   cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-icon {
+    left: 0;
+    margin-left: 21px;
+  }
 }
 
 .yourManager h3 {
@@ -538,6 +576,29 @@ li {
 
 .link:hover {
   color: #ffa220;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .yourManager h3 {
+    display: none;
+  }
+  .yourManager .manager-photo-container .manager-photo {
+    margin-top: 25px;
+    margin-left: 13px;
+    width: 26px;
+    height: 26px;
+  }
+  .yourManager .manager-photo-container .manager-link {
+    display: none;
+  }
+  .yourManager .manager-photo-container .online-photo-container {
+    left: 30px;
+    bottom: 20px;
+  }
+  .yourManager .manager-photo-container .online-photo-container .online-photo {
+    width: 10px;
+    height: 9px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
