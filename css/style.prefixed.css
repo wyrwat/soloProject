@@ -436,14 +436,7 @@ li {
   display: none;
 }
 
-.menu .menu-item .sidebar-link {
-  line-height: 42px;
-  color: #808080;
-  display: block;
-  height: 40px;
-}
-
-.menu .menu-item .sidebar-link svg {
+.menu .menu-item svg {
   line-height: 42px;
   width: 16px;
   height: 15px;
@@ -452,7 +445,14 @@ li {
   margin-right: 12px;
 }
 
-.menu .sidebar-link:hover {
+.menu .menu-item .sidebar-link {
+  line-height: 42px;
+  color: #808080;
+  display: inline-block;
+  height: 40px;
+}
+
+.menu .menu-item:hover {
   background-color: #282828;
 }
 

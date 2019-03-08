@@ -8,25 +8,26 @@
             background-color: #f58220;
             display: none;
         }
+        svg {
+            //display: block;
+            line-height: 42px;
+            width: 16px;
+            height: 15px;
+            fill: $icon-color;
+            margin: {
+                left: 19px;
+                right: 12px;
+            } 
+        }
         .sidebar-link { 
             line-height: 42px;
             color: $sidebar-link-2;
-            display: block;
-            height: 40px;;
-            svg {
-                //display: block;
-                line-height: 42px;
-                width: 16px;
-                height: 15px;
-                fill: $icon-color;
-                margin: {
-                    left: 19px;
-                    right: 12px;
-                } 
-            }
+            display: inline-block;
+            height: 40px;
+            
         }
     }
-    .sidebar-link:hover {
+    .menu-item:hover {
         background-color: $sidebar-hover;
     }
     .menu-item:hover .orange-rectangle {
