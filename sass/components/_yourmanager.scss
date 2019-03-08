@@ -49,36 +49,35 @@
   color: #ffa220;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 767px) {
   .yourManager {
     h3 {
       display: none;
     }
 
     .manager-photo-container {
-        
-        .manager-photo {
-            margin: {
-                top:25px;
-                left: 13px;
-            } 
-            width: 26px;
-            height: 26px;
+      .manager-photo {
+        margin: {
+          top: 25px;
+          left: 13px;
         }
+        width: 26px;
+        height: 26px;
+      }
 
-        .manager-link {
-            display: none;
+      .manager-link {
+        display: none;
+      }
+
+      .online-photo-container {
+        left: 30px;
+        bottom: 20px;
+
+        .online-photo {
+          width: 10px;
+          height: 9px;
         }
-
-        .online-photo-container {
-            left: 30px;
-            bottom: 20px;
-
-            .online-photo {
-                width: 10px;
-                height: 9px;
-            }
-        }
+      }
     }
   }
 }

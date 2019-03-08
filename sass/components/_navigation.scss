@@ -43,9 +43,15 @@
     display: block;
     background-color: #f58220;
   }
+  .menu-item:hover svg {
+    fill: $links-hover;
+  }
+  .menu-item:hover .sidebar-link {
+    color: $links-hover;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 767px) {
   .menu {
     .menu-item {
       height: 40px;
