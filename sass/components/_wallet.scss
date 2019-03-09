@@ -1,0 +1,25 @@
+.wallet {
+    margin: {
+        left: 18px;
+        top: 21px;
+    }
+    
+    svg {
+       // Style for "wallet"
+width: 17px;
+height: 18px;
+fill: $menu-pharagraph; 
+    }
+}
+
+.money {
+    margin: {
+        left: 16px;
+        
+        top: 21px;
+    }
+    color: $menu-pharagraph;
+font-family: Roboto;
+font-size: $menu-font-size-1;
+font-weight: 400;
+}
